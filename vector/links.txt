@@ -1,0 +1,12 @@
+//for insering into 2d vectors
+//check the link--
+//https://stackoverflow.com/questions/42249303/how-can-i-push-back-data-in-a-2d-vector-of-type-int
+std::vector<std::vector <int> > normal:
+for(int i=0;i<10;i++)
+{
+    normal.push_back(std::vector<int>());
+    for(int j=0;j<20;j++)
+    {    
+        normal[i].push_back(j);    
+    }
+}
