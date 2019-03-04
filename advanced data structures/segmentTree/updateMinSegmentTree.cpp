@@ -1,4 +1,5 @@
 //https://ide.geeksforgeeks.org/V4R6tsyJzq
+// https://github.com/jakobkogler/Algorithm-DataStructures/blob/master/RangeQuery/SegmentTree.cpp
 #include<bits/stdc++.h>
 using namespace std;
 int mini(int a,int b){
