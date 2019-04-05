@@ -1,50 +1,47 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 int main()
 {
-      int reference_string[100], page_faults = 0, m, n, s, pages, frames;
-      printf("\nEnter Total Number of Pages:\t");
-      scanf("%d", &pages);
-      printf("\nEnter values of Reference String:\n");
-      for(m = 0; m < pages; m++)
-      {
-            printf("Value No. [%d]:\t", m + 1);
-            scanf("%d", &reference_string[m]);
+      int p,f,k;
+      vector<int> ps;
+      cin>>p;
+      for(int i=0;i<p;i++){
+         cin>>k;
+         ps.push_back(k);
       }
-      printf("\nEnter Total Number of Frames:\t");
-      {
-            scanf("%d", &frames);
+      cin>>f;
+      vector<int> fs(f);
+      for(int i=0;i<f;i++){
+          fs[i] = -1;
       }
-      int temp[frames];
-      for(m = 0; m < frames; m++)
-      {
-            temp[m] = -1;
+      
+      int s=0,flag,pf;
+      pf =0;
+      for(int i=0;i<p;i++){
+          flag=0;
+          for(int j=0;j<f;j++){
+              if(ps[i] == fs[j]){
+                  flag = 1;
+              }
+          }
+          if(flag == 0){
+              pf++;
+              fs[s] = ps[i];
+              s = (s+1) % f;
+               for(int i=0;i<f;i++){
+              cout<<fs[i]<<" ";
+          }
+          }
+         else{
+             for(int i=0;i<f;i++){
+              cout<<"- ";
+          } 
+         }
+         
+          cout<<endl;
       }
-      s=0;
-      for(m = 0; m < pages; m++)
-      {
-           
-            for(n = 0; n < frames; n++)
-            {
-                  if(reference_string[m] == temp[n])
-                  {
-                        
-                        page_faults--;
-                  }
-                  else{
-                temp[s] = reference_string[m];
-            }
-            }
-            
-            s = (s+1) % frames;
-            page_faults++;
-            printf("\n");
-            for(n = 0; n < frames; n++)
-            {
-                  printf("%d\t", temp[n]);
-            }
-      }
-      printf("\nTotal Page Faults:\t%d\n", page_faults);
+      
+      cout<<"page faults - "<<pf<<endl;
       return 0;
 }
 
