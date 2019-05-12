@@ -1,4 +1,4 @@
-**for fast I/O**:
+**for fast I/O**:<br/>
 `ios_base::sync_with_stdio(false);`<br/>
  `cin.tie(NULL);`
               
