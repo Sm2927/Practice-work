@@ -1,5 +1,5 @@
 **for fast I/O**:
-`ios_base::sync_with_stdio(false);`
+`ios_base::sync_with_stdio(false);`<\br>
  `cin.tie(NULL);`
               
 **Greedy algorithms** :
