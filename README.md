@@ -4,3 +4,7 @@
               
 **Greedy algorithms** :
 at every step, we make the choice that looks best at that moment and we get the optimal solution for the entire                             problem.
+
+**Backtracking** :
+Go ahead with the approach, check if satisfied. If not, come back. Start with another alternative.
+
