@@ -1,4 +1,7 @@
 //https://practice.geeksforgeeks.org/problems/element-appearing-once/0
+
+//the sorting appraoch (nlogn)
+//for O(n) - using bit algo: https://www.geeksforgeeks.org/find-the-element-that-appears-once/
 #include <bits/stdc++.h>
 using namespace std;
 
