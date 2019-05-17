@@ -1,5 +1,5 @@
 //complexity O(n^3)
-
+//https://leetcode.com/problems/longest-substring-without-repeating-characters/
 bool all(string s,int beg,int end){
     unordered_set<char> st ;
     for(int i=beg;i<end;i++){
