@@ -22,4 +22,8 @@ can be used to search for element in the sorted array that has been rotated once
 
 
 **for non-repeating sequences** - use unordered (or hash) set or simply set
+
+
+
+
 ![check this out]{leetcode/slWinLongNonRepSubstring.cpp}
