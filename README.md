@@ -14,3 +14,12 @@ an advanced data structure that introduces multi-layers in linked lists for line
 **Binary search for special cases**:
 {O(log n)}
 can be used to search for element in the sorted array that has been rotated once (pivot is kept as the element whose next element is smaller)
+
+
+
+**for substrings** - use concept of sliding window
+
+
+
+**for non-repeating sequences** - use unordered (or hash) set or simply set
+![check this out]{leetcode/slWinLongNonRepSubstring.cpp}
