@@ -35,5 +35,7 @@ can be used to search for element in the sorted array that has been rotated once
 
 
 **for assigning some default value to a 2d vector**
+
+
         vector<vector<int>> v(r, vector<int>(c,default_value));
 
