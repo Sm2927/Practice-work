@@ -38,4 +38,9 @@ can be used to search for element in the sorted array that has been rotated once
 
 
         vector<vector<int>> v(r, vector<int>(c,default_value));
+        
+ **for converting int to string and vice-versa**
+string  sp = to_string(m);
+              
+int ans = stoi(s);
 
