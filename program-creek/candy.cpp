@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/candy/
+//check program creek for another approach
 
 class Solution {
 public:
