@@ -2,26 +2,17 @@
 
 class Solution {
 public:
-    void moveZeroes(vector<int>& a) {
-        int s,i,j;
-        s = a.size();
-        i=1;
-        j=0;
-        while(i<s){
-            if(a[j] != 0){
-                i++;
-                j++;
-                continue;
-            }
-            if(a[j] == 0 && a[i] != 0){
-                a[i] = a[i] - a[j];
-                a[j] = a[i] + a[j];
-                a[i] = a[j] - a[i]; //swapping
-                j++;
-            } 
-            i++;
-            
+    int candy(vector<int>& a) {
+        int s = a.size();
+        vector<int> scan(s,1);
+        for(int i=1;i<s;i++){
+            if(a[i] > a[i-1]){scan[i] = scan[i-1]+1;}
         }
-        
+        for(int i = s-2;i>=0;i--){
+            if(a[i] > a[i+1]){
+                if(scan[i]<=scan[i+1]){scan[i] = scan[i+1]+1;}
+            }
+        }
+        return accumulate(scan.begin(),scan.end(),0);
     }
 };
