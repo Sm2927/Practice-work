@@ -7,7 +7,7 @@ bool has_cycle(SinglyLinkedListNode* head) {
     }
     SinglyLinkedListNode* now = head;
     auto after = head;
-    while(after != NULL && after->next != NULL){
+    while(now!= NULL && after != NULL && after->next != NULL){
         now = now->next;
         after = after->next->next;
         if(now == after){
