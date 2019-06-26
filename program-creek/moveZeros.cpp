@@ -8,13 +8,19 @@ public:
         i=1;
         j=0;
         while(i<s){
+            if(a[j] != 0){
+                i++;
+                j++;
+                continue;
+            }
             if(a[j] == 0 && a[i] != 0){
                 a[i] = a[i] - a[j];
                 a[j] = a[i] + a[j];
                 a[i] = a[j] - a[i]; //swapping
                 j++;
-            }
+            } 
             i++;
+            
         }
         
     }
