@@ -4,6 +4,9 @@ class Solution {
 public:
     int trap(vector<int>& height) {
         int s = height.size();
+        if(s == 0){
+            return 0;
+        }
         vector<int> left(s,0);
         vector<int> right(s,0);
         int ml,mr;
@@ -11,10 +14,9 @@ public:
         right[s-1] = mr = height[s-1];
         int sol = 0;
         
-        for(int i=1;i<0;i++){
+        for(int i=1;i<s;i++){
             if(height[i] > ml){
-                ml = height[i];
-                left[i] = height[i];
+                left[i] = ml = height[i];
             }
             else{
                 left[i] = left[i-1];
@@ -23,11 +25,10 @@ public:
         
         for(int i=s-2;i>=0;i--){
             if(height[i] > mr){
-                mr = height[i];
-                left[i] = height[i];
+                right[i] = mr = height[i];
             }
             else{
-                left[i] = left[i+1];
+                right[i] = right[i+1];
             }
         }
         
