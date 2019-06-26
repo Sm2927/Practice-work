@@ -13,6 +13,7 @@ public:
             }
             i++;
         }
-        return j+1;
+        // cout<<j;
+        return j;
     }
 };
