@@ -52,10 +52,10 @@ int ans = stoi(s);
 
 1. Ford-Fulkerson Algo - 
 
-`function: FordFulkerson(Graph G,Node S,Node T):
-    Initialise flow in all edges to 0
-    while (there exists an augmenting path(P) between S and T in residual network graph):
-        Augment flow between S to T along the path P
-        Update residual network graph
-    return`
+`function: FordFulkerson(Graph G,Node S,Node T):`<br/>
+    `Initialise flow in all edges to 0`<br/>
+    `while (there exists an augmenting path(P) between S and T in residual network graph):`<br/>
+        `Augment flow between S to T along the path P`<br/>
+        `Update residual network graph`<br/>
+    `return`<br/>
 
