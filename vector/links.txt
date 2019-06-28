@@ -2,7 +2,7 @@
 //check the link--
 //https://stackoverflow.com/questions/42249303/how-can-i-push-back-data-in-a-2d-vector-of-type-int
 std::vector<std::vector <int> > normal:
-for(int i=0;i<10;i++)
+for(int i=0;i<10;i++)   //better use resize (check upper link)
 {
     normal.push_back(std::vector<int>());
     for(int j=0;j<20;j++)
