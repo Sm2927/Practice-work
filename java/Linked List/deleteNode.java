@@ -1,3 +1,5 @@
+//https://practice.geeksforgeeks.org/problems/java-collections-set-7-linkedlist/1
+//https://stackoverflow.com/questions/41611228/what-is-the-purpose-of-creating-static-object-in-java
 {
 //Initial Template for Java
 import java.io.*;
