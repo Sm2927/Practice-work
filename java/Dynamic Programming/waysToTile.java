@@ -12,7 +12,7 @@ class GFG {
           tiles[1] = BigInteger.valueOf(1);
           tiles[2] = BigInteger.valueOf(2);
         
-        // tiles[w] = ways(tiles,w-1) + ways(tiles,w-2); //(order of placing the tiles matter in calculating sum so...can't use the method used in waysToGetSum.java)
+        // tiles[w] = ways(tiles,w-1) + ways(tiles,w-2); //(order of placing the tiles matter in calculating sum so...can't use the method used in waysToGetASum.java)
         // return tiles;
         for(int i = 3;i<=w;i++){
             tiles[i] = tiles[i-1].add(tiles[i-2]);
